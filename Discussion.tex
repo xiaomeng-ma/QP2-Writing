@@ -1,0 +1,54 @@
+\section{Discussion}
+This paper conducts a comprehensive review of the current explanations for children's pronoun case errors. In this section, the findings and unanswered questions are presented. 
+\subsection{Summary of Findings}
+By conducting a corpus analysis of all the available English-speaking children's data in the CHILDES, this study has found the pronoun case error rate for children are generally lower than 5\%, indicating that chidlren rarely make any pronoun case errors. In addition, children are more likely to accusative-for-nominative case errors than other types of errors. Among which, `\textit{me}-for-I' and `\textit{her}-for-she' are two most popular errors among the children. This paper reviews the syntactic explanation for pronoun case errors  which predicts that finite verbs will block the use of non-nominative pronouns as subject in the sentence. By replicating \cite{schutze1996subject} and \cite{schutze1997} using the CHILDES data, the results are contradictory to the syntactic predictions that the the finite verbs can not prevent the non-nominative pronoun being used as the subject in the sentence. This paper further reviews the input hypothesis which predicts that children's ACC-for-NOM errors are related to their parents' input with an accusative pronoun preceding a verb, e.g. `\textit{let me ope it}'. By replicating \cite{kirjavainen2009can}, the results show that there is no significant correlation between children's ACC-for-NOM errors and parents' `ACC + V' input, which contradicts the prediction. In addition, the paper also reviews the morphological explanation which predicts that the pronoun case errors follow morphological patterns and errors affect all pronouns indiscriminately. By replicating \cite{rispoli1994,rispoli1998patterns} and \cite{fitzgerald2017case}, the results show that the pronoun case errors do not follow certain morphological patterns and the errors are not associated with each other. In addition, by replicating \cite{rispoli2005}, the results show that the combination of syntactic and morphological explanation still could not account the pronoun case errors adequately. 
+
+Given that none of the existing theories could fully account for the pronoun case errors and children rarely make such errors, this study also investigates how children acquire pronoun case in the first place. This study hypothesized that distributional patterns for different pronouns can distinguish varied cases. The model using \texttt{aX + Xb} frame (\texttt{X} as the pronoun) achieved high accuracy rates demonstrating that the trigram distribution patterns are informative enough to distinguish different cases.
+
+
+
+\subsection{The Developmental Pattern of Children's Pronoun Case Errors}
+Pronoun case errors have attracted so much attention for the several decades partially because that people believe that it is a signature  pattern that reflect the process of language acquisition. This study has shown that children actually rarely make pronoun case errors, and it is unclear whether those errors are developmental in nature. There's not enough evidence to conclude that pronoun case errors show a U-shaped developmental pattern. The age-error rate plots in longitudinal data and cross-sectional data do show a \textit{U} shape; however, given the low error rate, the difference between the nadir and the zenith in the U-shape is not significant. If children do have a U-shaped pattern in their pronoun case errors, it indicates that they might go through a more complex acquisition process. For example, pronoun case acquisition could be rule-based. Children might generate a rule for when to use different cases and calibrate the rules during the acquisition process. The dip in the U-shape could represent a period when they overgeneralized that rule. Alternatively, the U-shaped line could be actually flat, which suggests that pronoun case errors could be simple performance errors and are not developmental in nature. In this case, it implies that children might already have the knowledge of pronoun case when they first start using the pronouns. It's important to accurately depict the longitudinal pattern of pronoun case errors since many fundamental hypothesis about acquisition can be inferred from the longitudinal patterns. More data should be tested to confirm if children's pronoun case errors fit a U-shaped developmental pattern.
+
+\subsection{How Is Pronoun Case Acquired}
+This study also investigates the question of how the pronoun case was acquired by the children. Instead of presupposing that children might have any type of linguistic knowledge, this study takes a very conservative position that assumes the children have zero knowledge about pronoun case and tests if pronoun case can be distinguished by the distributional patterns alone. The results of \texttt{aX + Xb} model shows that the distributional cues are very effective in differentiating three cases in English. However, there is no evidence suggesting that the children actually utilize the distributional cues in their own pronoun case acquisition. In addition, the comparison between the errors the model made and the errors the children made showed that the error patterns are not the same. Table \ref{tab:hopelast} shows the comparison of error type and error rate made by children and the \texttt{aX + Xb} model\footnote{Only the case errors were tabulated in Table \ref{tab:hopelast}} trained in \ref{sec:Experiment2}. First, the children and the model made different types of errors. 5 types of errors were only found in the results of \texttt{aX + Xb} model but not in the children, which were italicized in the table. Moreover, the error frequencies and error rates are different in the children and the model. The correlation between those two error frequencies is 0.07 and the correlation between the two error rates is -0.07, suggesting there's no relationship between children's and the model's pronoun case error.
+
+It's still unclear that how children acquire pronoun case in the first place. It's possible that they utilized the distributional patterns along with other linguistic knowledge to learn when to use different cased pronouns. 
+\FloatBarrier
+\begin{table}[!h]
+\centering
+\caption{The Comparison of Error Type and Error Rate made by the children in CHILDES and made by the \texttt{aX + Xb} model}
+\label{tab:hopelast}
+\begin{tabular}{l|ll|l|ll|ll}
+\toprule
+Pronoun & \multicolumn{2}{l|}{Tokens of Pronoun} & Error Type & \multicolumn{2}{l|}{Tokens of Errors} & \multicolumn{2}{l|}{Error Rate} \\ \hline
+ & CHILDES & Model &  & CHILDES & Model & CHILDES & Model \\
+\multirow{2}{*}{I} & \multirow{2}{*}{105419} & \multirow{2}{*}{4051} & I-for-me & 9 & 8 & 0.01\% & 0.20\% \\
+ &  &  & \textit{I-for-my} & 0 & 4 & 0.00\% & 0.10\% \\
+\multirow{2}{*}{he} & \multirow{2}{*}{14877} & \multirow{2}{*}{2914} & he-for-him & 27 & 3 & 0.18\% & 0.10\% \\
+ &  &  & \textit{he-for-his} & 0 & 6 & 0.00\% & 0.21\% \\
+she & 4613 & 1751 & she-for-her & 4 & 3 & 0.09\% & 0.17\% \\
+we & 12048 & 4249 & we-for-us & 4 & 1 & 0.03\% & 0.02\% \\
+\multirow{2}{*}{they} & \multirow{2}{*}{8350} & \multirow{2}{*}{1616} & they-for-them & 4 & 6 & 0.05\% & 0.37\% \\
+ &  &  & \textit{they-for-their} & 0 & 2 & 0.00\% & 0.12\% \\
+\multirow{2}{*}{me} & \multirow{2}{*}{17884} & \multirow{2}{*}{1522} & me-for-I & 1579 & 6 & 8.83\% & 0.39\% \\
+ &  &  & me-for-my & 165 & 3 & 0.92\% & 0.20\% \\
+\multirow{2}{*}{him} & \multirow{2}{*}{4374} & \multirow{2}{*}{775} & him-for-he & 148 & 5 & 3.38\% & 0.65\% \\
+ &  &  & him-for-his & 51 & 3 & 1.17\% & 0.39\% \\
+her & 4491 & 1289 & her-for-she & 412 & 7 & 9.17\% & 0.54\% \\
+us & 689 & 104 & us-for-we & 13 & 7 & 1.89\% & 6.73\% \\
+\multirow{2}{*}{them} & \multirow{2}{*}{6369} & \multirow{2}{*}{1108} & them-for-they & 192 & 10 & 3.01\% & 0.90\% \\
+ &  &  & them-for-their & 99 & 1 & 1.55\% & 0.09\% \\
+\multirow{2}{*}{my} & \multirow{2}{*}{28208} & \multirow{2}{*}{659} & my-for-I & 485 & 5 & 1.72\% & 0.76\% \\
+ &  &  & my-for-me & 31 & 9 & 0.11\% & 1.37\% \\
+\multirow{2}{*}{his} & \multirow{2}{*}{4404} & \multirow{2}{*}{798} & his-for-he & 9 & 11 & 0.20\% & 1.38\% \\
+ &  &  & \textit{his-for-him} & 0 & 11 & 0.00\% & 1.38\% \\
+\multirow{2}{*}{our} & \multirow{2}{*}{1176} & \multirow{2}{*}{133} & our-for-we & 1 & 3 & 0.09\% & 2.26\% \\
+ &  &  & \textit{our-for-us} & 0 & 3 & 0.00\% & 2.26\% \\
+\multirow{2}{*}{their} & \multirow{2}{*}{795} & \multirow{2}{*}{125} & their-for-they & 8 & 3 & 1.01\% & 0.38\% \\
+ &  &  & \textit{their-for-them} & 0 & 7 & 0.00\% & 5.60\% \\
+Total & 213697 & 21094 &  & 3241 & 127 & 1.51\% & 0.6\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
